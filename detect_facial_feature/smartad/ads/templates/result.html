@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+     
+     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap');
+     body{
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+     }
+     .mainfg{
+       width: 100%;
+       height: 100%;
+       background-image: url('/media/img.gif');
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: 100% 100%;
+     }
+     .fox{
+       width: 100%;
+       height: 100%;
+      
+     }
+     .displa{
+       
+       width: 100%;
+       height: auto;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+     }
+
+     .qw{
+       width: 100%;
+       height: 500px;
+     }
+
+     .inbox{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+     }
+
+     .inbox img{
+       width: 70%;
+       height: 80%;
+     }
+
+     .inbox1{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+     }
+
+     .navbox{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.navbox img{
+  width: 130px;
+  height: 100px;
+}
+  </style>
+  <body>
+    <div class="mainfg">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container text-center navbox">
+        <img src="/media/logo2.png">       
+      </div>
+    </nav>
+
+    <div class="container-fluid fox">
+      <div class="displa">
+        <h2 class="my-4">Uploaded Image</h2>
+
+        <div class="row qw">
+          <div class="col-lg-6 colmd-6 col-sm-6 inbox">
+              <img src="/media/image.jpg" class="img-fluid" />
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-6 inbox1">
+            <div>
+            <h2 class="my-4">AGE : {{age}}</h2>
+            <h2 id="check" class="my-4">
+              GENDER : <span id="gende">{{gender}}</span>
+            </h2>
+            <h2 class="my-4">BEARD : <span id="beare">{{beard}}</span></h2>
+            <a class="btn btn-dark my-4" href="/">Homepage</a>
+            <a
+              class="btn btn-dark my-4"
+              id="prod"
+              href="#"
+              target="_blank"
+              onclick="gend()"
+              >Products For You</a
+            >
+          </div>
+          </div>
+        </div>     
+      </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<script>
+  function gend() {
+    var gen = document.getElementById("gende").innerHTML;
+    var bear = document.getElementById("beare").innerHTML;
+    if (gen == "Male") {
+      if ((bear == "Beard Found"))
+        document.getElementById("prod").href =
+          "https://www.amazon.in/s?k=male+beardo&crid=35SP0KT9CE4LT&sprefix=male+beardo%2Caps%2C298&ref=nb_sb_noss_2";
+      else
+        document.getElementById("prod").href =
+          "https://www.amazon.in/s?k=male+products+for+gift&crid=3FWQJ4UR4KTCV&sprefix=male+products+for+gift%2Caps%2C369&ref=nb_sb_noss";
+    } else
+      document.getElementById("prod").href =
+        "https://www.amazon.in/s?k=female+products+for+gift&crid=3HC6BA4GNSJ73&sprefix=femal+products+for+gift%2Caps%2C283&ref=nb_sb_noss";
+  }
+</script>
+
+<script src="./gendy.js"></script>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+  integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+  integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+  crossorigin="anonymous"
+></script>

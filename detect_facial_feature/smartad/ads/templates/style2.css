@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+  background: url(img.gif) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.container{
+  height: 550px;
+  width: 430px;
+  position: relative;
+}
+.container .wrapper{
+  position: relative;
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+  background: rgb(9, 9, 9);
+  border: 2px dashed #c2cdda;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.wrapper.active{
+  border: none;
+}
+.wrapper .image{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.wrapper .icon{
+  font-size: 100px;
+  color: #0687a7;
+}
+.wrapper .text{
+  font-size: 20px;
+  font-weight: 500;
+  color: #00ccff;
+}
+.wrapper #cancel-btn i{
+  position: absolute;
+  font-size: 20px;
+  right: 15px;
+  top: 15px;
+  color: #00ccff;
+  cursor: pointer;
+  display: none;
+}
+.wrapper.active:hover #cancel-btn i{
+  display: block;
+}
+.wrapper #cancel-btn i:hover{
+  color: #00ccff;
+}
+.wrapper .file-name{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 18px;
+  color: #fff;
+  display: none;
+  background: linear-gradient(110deg,#04f5f9a4 0%,#00ccff 100%);
+}
+.wrapper.active:hover .file-name{
+  display: block;
+}
+.container #custom-btn{
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: linear-gradient(110deg,#04f5f9a4 0%,#00ccff 100%);
+}
+.container #sub-btn{
+    margin-top: 30px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: linear-gradient(110deg,#04f5f9a4 0%,#00ccff 100%);
+}
